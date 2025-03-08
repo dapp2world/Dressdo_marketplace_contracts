@@ -1,0 +1,119 @@
+// new besu with zero gas fees
+module.exports = {
+  TREASURY_ADDRESS: '0x2c686c46d3622d60ccabefb757158c8904312871',
+  WRAPPED_FTM_MAINNET: '',
+  WRAPPED_FTM_TESTNET: '0xD7D34Bc25E1139987e2318d49eEFfc272472fc09',
+  PLATFORM_FEE: '0',
+  AUCTION: '',
+  MARKETPLACE: '',
+  BUNDLE_MARKETPLACE: '',
+  PROXY_ADDRESS_MAINNET: '',
+  PROXY_ADDRESS_TESTNET: '',
+  FANTOM_ADDRESS_REGISTRY: ''
+};
+
+// old besu
+// module.exports = {
+//   TREASURY_ADDRESS: '0x84b6873362b13ef5cae122fc0670aef44d2ff0bd',
+//   AUCTION: '0x3674f402e3A8FA31AA0fa0c999b4A1bDD4fC9A18',
+//   MARKETPLACE: '0x142d82588d56f51A9bFB47a52aD95B0A28Bbff58',
+//   BUNDLE_MARKETPLACE: '0x2f6F2c52458ae789c442BCd3FA156F43617Fa98e',
+//   PROXY_ADDRESS_MAINNET: '0x386b6F8011E11804edD5fe24eE3DF73fA16743C6',
+//   PROXY_ADDRESS_TESTNET: '0x98f97D83BBbf501e6Ae3fc7e667e5f4431840f99',
+//   FANTOM_ADDRESS_REGISTRY: '0xB69c01461f7e22C0404Fc76b0d10dAda6f26A092',
+//   WRAPPED_FTM_MAINNET: '0x19Aac5f612f524B754CA7e7c41cbFa2E981A4432',
+//   WRAPPED_FTM_TESTNET: '0x686AfD6e502A81D2e77f2e038A23C0dEf4949A20',
+//   PLATFORM_FEE: '0'
+// };
+
+/*
+Admin Address for Collection Approval = 0x435050e332523ca7391eac5bebf083a808a41e8c040072c35c279aa816633206 0x46072601dae4184b348a632f41f23cff675e61d1
+
+script2/deploy_all
+BESU NETWORK
+Contract deployer -> 0xb8f66e3833eeeb7904ad44eadbf0fb478175bca975c698b62e839145dd0ca092 0xcbd2880e56a7259abb26bcfb81ed1c8895987e5d
+treasury private key 0xd0259e61bfc697963b12c7e622c1e200a44030f9e9cbaba1695756cda4587d68 0x84b6873362b13ef5cae122fc0670aef44d2ff0bd
+royalty private key 0xd5f07eb699837a08b3821be5ccf47b4c8f882ea80ede8dadffbd61874158d016 0xf16eb5e0d1b30e2c1f5475b43abe15c4e67ef877
+
+  TREASURY_ADDRESS: '0x84b6873362b13ef5cae122fc0670aef44d2ff0bd',
+  AUCTION: '',
+  MARKETPLACE: '',
+  BUNDLE_MARKETPLACE: '',
+  PROXY_ADDRESS_MAINNET: '',
+  PROXY_ADDRESS_TESTNET: '',
+  FANTOM_ADDRESS_REGISTRY: '',
+  WRAPPED_FTM_MAINNET: '',
+  WRAPPED_FTM_TESTNET: '0x686AfD6e502A81D2e77f2e038A23C0dEf4949A20', // Newly deployed WFTM to besu
+  PLATFORM_FEE: '0'
+
+
+  challaveerapraveenkumarreddy@Mac Artion-Contracts % npx hardhat run --network besutestnet ./scripts/scripts2/deploy_all.js
+network:  besutestnet
+Deployer's address:  0xcBd2880E56a7259aBB26bCfb81eD1C8895987E5d
+FantomArtion deployed at 0x99Fc5b77d14c491D721FA0008a721608Df9c69e4
+ProxyAdmin deployed to: 0x58e14104D584c8e3f9d97f9d30852B37b2CfE768
+FantomMarketplace deployed to: 0xE5eD53610a0DD081Dc7f43433dd91f008E037CC0
+Marketplace Proxy deployed at  0xfaf274f6EC3BA633B1A5324bEBb2680806BDb36C
+Marketplace Proxy initialized
+FantomBundleMarketplace deployed to: 0xbD0a5C34F1f9c9e8DEb81c4D44E6FE1116AfB906
+Bundle Marketplace Proxy deployed at  0xC815bf3FfE38A00B2B0c896Ab6308F046DA85577
+Bundle Marketplace Proxy initialized
+FantomAuction deployed to: 0x4B9A545B6c7a5Ea020574D99e9271758faA480E0
+Auction Proxy deployed at  0xA55eDcdd2306A95d31dE94A44B575078B61f1fB9
+Auction Proxy initialized
+FantomNFTFactory deployed to: 0x3cAB4B6541Eb734927157b62767915a572deBbeB
+FantomNFTFactoryPrivate deployed to: 0x6Ac8Ec6571273C2aB165Ae64da542Bf14E511C76
+FantomNFTTradable deployed to: 0x36F10456bB05b8Da2DCFE91c3983116810B6ccD9
+FantomNFTTradablePrivate deployed to: 0xE1735Eb247bF73207f16a6da5dA0C048fD90e6c2
+FantomTokenRegistry deployed to 0xCA01b0fCE7880D749c32D56E1B3D2c89acd0F2BA
+FantomAddressRegistry deployed to 0xA969Db8e6ab03D28d380293d6548FEF4a64074F2
+FantomPriceFeed deployed to 0xdB0707bd291B0a308aE0d97b3BCc081ad31a4313
+FantomArtTradable deployed to: 0xb1A58dce8B18AbA42B70712536f86a7cA3B0232a
+FantomArtTradablePrivate deployed to: 0xa24c23FcAD435AAFEdD61D58d49570FDEF4102E2
+FantomArtFactory deployed to: 0x6Fb3A51a6360351D1405Fd06aB937C399E1Ea4B2
+FantomArtFactoryPrivate deployed to: 0xD76040Ab96838DE6Ce0e7EC8834db421a16384c6
+*/
+
+/*
+script2/deploy_all
+network:  kairos testnet
+Deployer's address:  0x164E9945b2a4695FedFf7EBF51AEEB4B24c268Df
+FantomArtion deployed at 0x11773f2299Fda3aDED907dE4b05F79E50130f803
+ProxyAdmin deployed to: 0x98f97D83BBbf501e6Ae3fc7e667e5f4431840f99
+FantomMarketplace deployed to: 0x55f6dc2fa63fF92D2311eF36d5977fb2a98F0BDc
+Marketplace Proxy deployed at  0x142d82588d56f51A9bFB47a52aD95B0A28Bbff58
+Marketplace Proxy initialized
+FantomBundleMarketplace deployed to: 0x54077E4305212B8D4568486E79C25AaC38afdAb4
+Bundle Marketplace Proxy deployed at  0x2f6F2c52458ae789c442BCd3FA156F43617Fa98e
+Bundle Marketplace Proxy initialized
+FantomAuction deployed to: 0x39F2Ae09af6987DfBE32856F841BDf4448a251af
+Auction Proxy deployed at  0x3674f402e3A8FA31AA0fa0c999b4A1bDD4fC9A18
+Auction Proxy initialized
+FantomNFTFactory deployed to: 0x112b7E46f91986480a482D127880Ad58Db92F7da
+FantomNFTFactoryPrivate deployed to: 0x8208174474Aa87788da951d06Eddd4578692a451
+FantomNFTTradable deployed to: 0x5d723A6fe4881D12365F1Bcb682Aa04b65016A56
+FantomNFTTradablePrivate deployed to: 0x917046081a153c164D15A2B6Ba181503250eF8E9
+FantomTokenRegistry deployed to 0x3f4592Dd14c7bfd9a8d976021276D77842F389bD
+FantomAddressRegistry deployed to 0xB69c01461f7e22C0404Fc76b0d10dAda6f26A092
+FantomPriceFeed deployed to 0xc963743300354f2FDfa8A4D3a50e377128cC1348
+FantomArtTradable deployed to: 0x4abbcf1E25A76B4A87Cf33Bd63B82947BdD7E6c2
+FantomArtTradablePrivate deployed to: 0xB61785AC54d55C58baB6F99516F067B452B6aD80
+FantomArtFactory deployed to: 0xBD6c01837505db10ECf5Aa04c2B68674466f5aD3
+FantomArtFactoryPrivate deployed to: 0xC4eaa61FA83e0D88548Ac0a919900Dac17504520
+*/
+
+/*
+For kaia kairos
+module.exports = {
+  TREASURY_ADDRESS: '',
+  AUCTION: '0x3674f402e3A8FA31AA0fa0c999b4A1bDD4fC9A18',
+  MARKETPLACE: '0x142d82588d56f51A9bFB47a52aD95B0A28Bbff58',
+  BUNDLE_MARKETPLACE: '0x2f6F2c52458ae789c442BCd3FA156F43617Fa98e',
+  PROXY_ADDRESS_MAINNET: '0x386b6F8011E11804edD5fe24eE3DF73fA16743C6',
+  PROXY_ADDRESS_TESTNET: '0x98f97D83BBbf501e6Ae3fc7e667e5f4431840f99',
+  FANTOM_ADDRESS_REGISTRY: '0xB69c01461f7e22C0404Fc76b0d10dAda6f26A092',
+  WRAPPED_FTM_MAINNET: '0x19Aac5f612f524B754CA7e7c41cbFa2E981A4432',
+  WRAPPED_FTM_TESTNET: '0x043c471bEe060e00A56CcD02c0Ca286808a5A436',
+  PLATFORM_FEE: '0'
+};
+*/
